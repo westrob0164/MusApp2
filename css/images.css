@@ -53,3 +53,24 @@
    width: 500px;
    transform: translate(-70px, -80px);
 }
+
+.imgPitches{
+   width: 240px;
+   cursor: pointer;
+}
+
+.pitch1{
+   transform: translate(0px, 0px);
+}
+
+.pitch2{
+   transform: translate(35px, -50px);
+}
+
+.pitch3{
+   transform: translate(-65px, 50px);
+}
+
+.pitch4{
+   transform: translate(-10px, 0px);
+}

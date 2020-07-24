@@ -1,0 +1,46 @@
+
+
+/*Main Grid*/
+.workingWrapper {
+   width: 680px;
+   height: 550px;
+   display: grid;
+   grid-template-columns: 50px  1fr;   
+   grid-template-rows: 80px  1fr  1fr;
+   grid-gap: 0px;
+
+}
+
+.wkTitle  {
+   grid-column: span 2;
+   grid-row: 1;
+   height: 80px;
+   background-color: aqua;
+}
+
+.wkSelectTitle{
+   grid-column: 1;
+   grid-row: 2;
+   background-color: darkgrey;
+}
+
+.wkSelect{
+   grid-column: 2;
+   grid-row: 2;
+   background-color: darkgrey;
+}
+.wkPlayTitle{
+   grid-column: 1;
+   grid-row: 3;
+   background-color: lightgray;
+}
+
+.wkPlay{
+   grid-column: 2;
+   grid-row: 3;
+   background-color: lightgray;
+}
+
+.workDiv{
+   border-radius: 20px;
+}   

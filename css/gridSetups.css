@@ -8,8 +8,6 @@
     grid-auto-rows: minmax(130px, auto);
 }
 
-
-
 .leftgutter{
     grid-column: 1;
 }
@@ -53,7 +51,7 @@
 .rhythmPage {
     display: grid;
     grid-template-columns: 1fr 175px 175px 1fr;
-    grid-template-rows: 1fr, 165px, 175px, 1fr;
+    grid-template-rows: 100px  165px  175px  1fr;
     grid-gap: 5px;
     /* grid-auto-rows: minmax(90, auto); */
     
@@ -94,6 +92,44 @@
     grid-row: 4;
     cursor: pointer;
 }
+
+.pitchPage {
+    width: 680px;
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(4, 170px);
+    grid-template-rows: 1fr  200px  1fr;
+    grid-gap: 0px;
+    /* grid-auto-rows: minmax(90, auto); */
+    
+}
+
+.wrapPitch1{
+    grid-column: 1;
+    grid-row: 2;
+    cursor: pointer;
+}
+
+.wrapPitch2{
+    grid-column: 2;
+    grid-row: 2;
+    cursor: pointer;
+}
+
+
+.wrapPitch3{
+    grid-column: 3;
+    grid-row: 2;
+    cursor: pointer;
+}
+
+
+.wrapPitch4{
+    grid-column: 4;
+    grid-row: 2;
+    cursor: pointer;
+}
+
 
 /* .rhythmImage {
     grid-column: 2;

@@ -1,4 +1,4 @@
-
+import { workingPageOutline } from './workingInterface.js';
 
 //the Index wraper
 $("<div>")
@@ -15,8 +15,6 @@ $("<div>")
     .addClass('pitchImage')    
     .prepend('<img class="indexRhythm imgPitch" src="images/pitch.png"/>')
     .appendTo(".indexWraper");
-   
-
 
 $('.imgRhythm').on('click', function(){secondLevelIndex('rhythmPage')});
 
@@ -28,12 +26,24 @@ function secondLevelIndex(type) {
     $('.indexWraper').hide();
     backHomeImages();
 
-    $("<div>")
-      .addClass(type) 
-    //   .prepend(secondLevel(type))
-      .appendTo(".content");   
+    // check to see if the second level index exists
+    if ($(`.${type}`).length) {
 
-    secondLevel(type);
+        $(`.${type}`).show();
+
+        $('.topLeftCell').show();
+        $('.bottomLeftCell').show();
+
+    } else {
+
+       //create the second level index div 
+       $("<div>")
+        .addClass(type)
+        .appendTo(".content");   
+  
+       //add the content to the second level div
+       secondLevel(type);        
+    }    
 }
 
 // function to display the back and home images
@@ -51,6 +61,12 @@ function homepage() {
     $('.indexWraper').show();
     $('.topLeftCell').hide();
     $('.bottomLeftCell').hide();
+
+    if ($('.rhythmPage').length || $('.pitchPage').length){
+        $('.rhythmPage').hide();
+        $('.pitchPage').hide();
+    }
+
 }
 
 
@@ -93,9 +109,37 @@ function secondLevel(type) {
             .addClass('wrapCompound')    
             .prepend('<img class="imgRhythmTitles imgRhythmCompound" src="images/rhythm_compound.png"/>')
             .appendTo(".rhythmPage");
+
+        $('.wrapQuarterNote').on('click', function(){workingPageOutline('quarterNote', type)});
+        $('.wrapHalfNote').on('click', function(){workingPageOutline('halfNote', type)});
+        $('.wrapDotQuarterNote').on('click', function(){workingPageOutline('dotQuarterNote', type)});
+        $('.wrapDotHalfNote').on('click', function(){workingPageOutline('dotHalfNote', type)});
         
     } else {
-        
+        $("<div>")
+            .addClass('wrapPitch1')    
+            .prepend('<img class="imgPitches pitch1" src="images/pitch_1.png"/>')
+            .appendTo(".pitchPage");
+
+        $("<div>")
+            .addClass('wrapPitch2')    
+            .prepend('<img class="imgPitches pitch2" src="images/pitch_2.png"/>')
+            .appendTo(".pitchPage");
+
+        $("<div>")
+            .addClass('wrapPitch3')    
+            .prepend('<img class="imgPitches pitch3" src="images/pitch_3.png"/>')
+            .appendTo(".pitchPage");
+
+        $("<div>")
+            .addClass('wrapPitch4')    
+            .prepend('<img class="imgPitches pitch4" src="images/pitch_4.png"/>')
+            .appendTo(".pitchPage");
+
+        $('.pitch1').on('click', function(){workingPageOutline('pitch1', type)});
+        $('.pitch2').on('click', function(){workingPageOutline('pitch2', type)});
+        $('.pitch3').on('click', function(){workingPageOutline('pitch3', type)});
+        $('.pitch4').on('click', function(){workingPageOutline('pitch4', type)});        
     }
 }
 
