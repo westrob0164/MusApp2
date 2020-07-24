@@ -1,0 +1,55 @@
+/* This files formats all the images */
+
+.imgRhythm{
+   width: 250px;
+   transform: translate(-112px, 55px);
+   cursor: pointer;
+}
+
+.imgPitch{
+   width: 250px;
+   transform: translate(112px, -383px);
+   cursor: pointer;
+}
+
+.indexRhythm:hover {
+   opacity: 0.5;
+   filter: alpha(opacity=40);
+}
+
+.imgHome{
+   width: 180px;
+   transform: translate(10px, 40px);
+   cursor: pointer;
+}
+
+.imgBack{
+   width: 180px;
+   transform: translate(0px, -70px);
+   cursor: pointer;
+}
+
+.imgPitchIndex{
+   width: 150px;
+}
+
+.imgRhythmIndex{
+   width: 150px;
+  
+}
+
+/* Rymthm Images */
+.imgRhythmButtons{
+   width: 175px;
+   cursor: pointer;
+}
+
+.imgRhythmSimple{
+   width: 350px;
+   transform: translate(3px, -30px);
+
+}
+.imgRhythmCompound{
+   width: 500px;
+   transform: translate(-70px, -80px);
+}

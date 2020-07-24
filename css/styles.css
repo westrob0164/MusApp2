@@ -1,0 +1,18 @@
+@import url("gridSetups.css");
+@import url("images.css");
+
+
+.linksTrans {
+    font-size: 20px;
+}
+
+html {
+    text-align: center;
+}
+
+/* @media only screen and (orientation:landscape){
+        body {
+          height: 100vw;
+          transform: rotate(90deg);
+        }
+      } */
