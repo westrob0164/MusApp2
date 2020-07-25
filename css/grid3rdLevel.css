@@ -3,10 +3,10 @@
 /*Main Grid*/
 .workingWrapper {
    width: 680px;
-   height: 550px;
+   height: 500px;
    display: grid;
-   grid-template-columns: 50px  1fr;   
-   grid-template-rows: 80px  1fr  1fr;
+   grid-template-columns: 45px  1fr;   
+   grid-template-rows: 40px  1fr  1fr;
    grid-gap: 0px;
 
 }
@@ -15,32 +15,41 @@
    grid-column: span 2;
    grid-row: 1;
    height: 80px;
-   background-color: aqua;
+   transform: translate(20px, -35px);
 }
 
 .wkSelectTitle{
    grid-column: 1;
    grid-row: 2;
-   background-color: darkgrey;
+   background-color: #D0D0D0;
 }
 
 .wkSelect{
    grid-column: 2;
    grid-row: 2;
-   background-color: darkgrey;
+   background-color: #D0D0D0;
 }
 .wkPlayTitle{
    grid-column: 1;
    grid-row: 3;
-   background-color: lightgray;
+   background-color: #e5e5e5;
 }
 
 .wkPlay{
    grid-column: 2;
    grid-row: 3;
-   background-color: lightgray;
+   background-color: #e5e5e5;
 }
 
 .workDiv{
    border-radius: 20px;
 }   
+
+.wkTitleString{
+   font-size: 45px;
+   color: #909090;}
+
+.strSelectTitle{
+   transform: rotate(-90deg);
+}
+

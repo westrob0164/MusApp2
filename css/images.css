@@ -2,13 +2,13 @@
 
 .imgRhythm{
    width: 250px;
-   transform: translate(-112px, 55px);
+   transform: translate(58px, 30px);
    cursor: pointer;
 }
 
 .imgPitch{
    width: 250px;
-   transform: translate(112px, -383px);
+   transform: translate(-58px, 30px);
    cursor: pointer;
 }
 

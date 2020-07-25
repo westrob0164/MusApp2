@@ -1,7 +1,9 @@
-
+import { wkTitles, wkSubTitles } from '../../data/workingTitles.js';
 
 export function workingPageOutline(pageID, type) {
 
+   console.log(wkSubTitles);
+   
    //set up wire frame for the working area
    if (type === 'rhythmPage') {
       $('.rhythmPage').hide();
@@ -18,12 +20,12 @@ export function workingPageOutline(pageID, type) {
    //working area title
    $("<div>")
       .addClass('wkTitle')    
-      //.prepend('<img class="imgRhythmButtons imgRhythmQuarterNote" src="images/rhythm_quarter_note.png"/>')
+      .prepend(`<h1 class="wkTitleString">${wkTitles[pageID]}</h1>`)
       .appendTo(".workingWrapper");
 
    $("<div>")
       .addClass('wkSelectTitle workDiv')    
-      //.prepend('<img class="imgRhythmButtons imgRhythmQuarterNote" src="images/rhythm_quarter_note.png"/>')
+      .prepend(`<p class = strSelectTitle>${wkSubTitles.setPractice}</p>`)
       .appendTo(".workingWrapper");
 
    $("<div>")
@@ -42,5 +44,5 @@ export function workingPageOutline(pageID, type) {
       .appendTo(".workingWrapper");
 
 
-   console.log("this is what is passed", pageID, type);
+   console.log("this is what is passed", wkTitles[pageID], type);
 }

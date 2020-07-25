@@ -43,8 +43,12 @@
 
 /*content grid Index*/
 .indexWraper {
-    height: 500px;
+    height: 545px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
 }
+
 
 
 /* rhythm Page */

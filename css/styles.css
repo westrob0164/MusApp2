@@ -2,8 +2,19 @@
 @import url("images.css");
 @import url("grid3rdLevel.css");
 
+
+@font-face {
+  font-family: 'AvenirNextCondensed-Regular';
+  src: url('../fonts/AvenirNextCondensed-Regular.ttf') format('truetype');
+ }
+
+body {
+  font-family: AvenirNextCondensed-Regular;
+}
+
+
 .linksTrans {
-    font-size: 20px;
+    font-size: 40px;
 }
 
 html {

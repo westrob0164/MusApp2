@@ -65,8 +65,8 @@ function homepage() {
     if ($('.rhythmPage').length || $('.pitchPage').length){
         $('.rhythmPage').hide();
         $('.pitchPage').hide();
+        $('.workingWrapper').hide();   
     }
-
 }
 
 
