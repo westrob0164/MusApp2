@@ -25,12 +25,12 @@ export function workingPageOutline(pageID, type) {
 
    $("<div>")
       .addClass('wkSelectTitle workDiv')    
-      .prepend(`<p class = strSelectTitle>${wkSubTitles.setPractice}</p>`)
+      .prepend(`<h2 class = strSelectTitle>${wkSubTitles.setPractice}</h2>`)
       .appendTo(".workingWrapper");
 
    $("<div>")
       .addClass('wkPlayTitle workDiv')    
-      //.prepend('<img class="imgRhythmButtons imgRhythmQuarterNote" src="images/rhythm_quarter_note.png"/>')
+      .prepend(`<h2 class = strSelectTitle>${wkSubTitles[type]}</h2>`)
       .appendTo(".workingWrapper");
 
    $("<div>")

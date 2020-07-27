@@ -10,7 +10,7 @@ export const wkTitles = {
 }
 
 export const wkSubTitles = {
-   "setPractice": "SET YOUR PRACTICE",
+   "setPractice": "SET  YOUR  PRACTICE",
    "rhythmPage":  "VOCALIZE RHYTHM",
    "pitchPage":   "SING FORMULA"
 }

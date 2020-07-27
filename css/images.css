@@ -18,14 +18,14 @@
 }
 
 .imgHome{
-   width: 180px;
-   transform: translate(10px, 40px);
+   width: 140px;
+   transform: translate(0px, 20px);
    cursor: pointer;
 }
 
 .imgBack{
-   width: 180px;
-   transform: translate(0px, -70px);
+   width: 140px;
+   transform: translate(0px, -40px);
    cursor: pointer;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .imgPitches{
-   width: 240px;
+   width: 200px;
    cursor: pointer;
 }
 
@@ -64,13 +64,13 @@
 }
 
 .pitch2{
-   transform: translate(35px, -50px);
+   transform: translate(40px, -50px);
 }
 
 .pitch3{
-   transform: translate(-65px, 50px);
+   transform: translate(-80px, 50px);
 }
 
 .pitch4{
-   transform: translate(-10px, 0px);
+   transform: translate(-40px, 0px);
 }
