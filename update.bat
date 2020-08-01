@@ -2,6 +2,8 @@ git status
 
 git add .
 
-git commit -m "update July 18 2020"
+git commit -m "changes July 27 2020 V2"
 
-git push -u "https://gitlab.com/west-consulting/musapp" master
+git push -u origin2 master
+
+REM git push -u "https://gitlab.com/west-consulting/musapp" master

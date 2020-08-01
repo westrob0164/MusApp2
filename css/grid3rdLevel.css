@@ -52,7 +52,159 @@
 .strSelectTitle{
    text-align: center;
    width: 200px;
-   transform: rotate(-90deg) translate(-80px, -80px);;
+   word-spacing: 7px;
+   transform: rotate(-90deg) translate(-80px, -80px);
    
+}
+
+/* music box */
+.musicBoxButtons{
+   height: 70px;
+}
+
+.musicScore{
+   height:70px;
+}
+
+.musicControls{
+   display: grid;
+   height:70px;
+   grid-template-columns: 35px 1fr 1fr 1fr 1fr;   
+   grid-template-rows: 1fr  1fr;
+   grid-gap: 5px;
+}
+
+.musicbuffer{
+   grid-column: 1;
+   grid-row: 1;
+}
+
+.tempoTitle{
+   grid-column: 2;
+   grid-row: 1;
+   font-size: 30px;
+   color: #9ec2e0;
+   transform: translate(-50px, 18px);
+}
+
+.tempoSlider{
+   grid-column: 2;
+   grid-row: 2;
+}
+
+.volumeTitle{
+   grid-column: 3;
+   grid-row: 1;
+   font-size: 30px;
+   color: #9ec2e0;
+   transform: translate(-50px, 18px);
+}
+
+.volumeSlider{
+   grid-column: 3;
+   grid-row: 2;
+}
+
+.solfegeButton{
+   grid-column: 4;
+   grid-row: 1;
+}
+
+.instrumentList{
+   grid-column: 5;
+   grid-row: 1;
+}
+
+
+/* selection area pitch*/
+
+.pitchPageWraper{
+   display: grid;
+   grid-gap: 0px;
+   grid-template-columns: 30px  1fr 30px;   
+   grid-template-rows: 45px  1fr  45px;
+} 
+
+.keysTitle{
+   grid-column: 2;
+   grid-row: 1;
+   font-size: 30px;
+   text-align: left;
+   transform: translate(0px, 15px);
+}
+.selectionContainer{
+   grid-column: 2;
+   grid-row: 2;
+   display: grid;
+   grid-gap: 4px;
+   grid-template-columns: repeat(13, 1fr);
+}
+
+.keyButton{
+   height: 40px;
+   border: thin solid black;  
+   padding: 8px;
+   font-size: 25px;
+   border-radius: 10px;
+   cursor: pointer;
+   width: 20px;
+}
+
+.major{
+   background-color: #919191;
+   color: #fff;
+}
+
+.minor{
+   background-color: #fff;
+   color: #000;
+}
+
+/* selection area rhythm*/
+.rhythmPageWraper{
+   display: grid;
+   grid-gap: 0px;
+   grid-template-columns: 30px  1fr 30px;   
+   grid-template-rows: 40px  1fr  1fr 1fr;
+} 
+
+.rhythmCellsTitle{
+   grid-column: 2;
+   grid-row: 1;
+   font-size: 30px;
+   text-align: left;
+   transform: translate(0px, 10px);
+}
+
+.rhythmSelectionContainer{
+   grid-column: 2;
+   grid-row: 2;
+   font-family: MusiSync;
+   font-size: 40px;
+   display: grid;
+   grid-gap: 6px;
+   grid-template-columns: repeat(9, 1fr);
+   
+}
+
+.setTimeSignature{
+   grid-column: 2;
+   grid-row: 3;
+   font-size: 20px;
+   text-align: left;
+   transform: translate(0px, 18px);
+}
+
+.setMeasureNumber{
+   grid-column: 2;
+   grid-row: 4;
+   font-size: 20px;
+   text-align: left;
+   transform: translate(0px, 18px);
+}
+
+.btnRhy{
+   background-color: #fff;
+   border: 2px solid #000;
 }
 

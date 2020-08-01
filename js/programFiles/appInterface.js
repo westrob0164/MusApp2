@@ -75,8 +75,6 @@ function secondLevel(type) {
 
     $('.topLeftCell').show();
     $('.bottomLeftCell').show();
-    
-    console.log(type);
 
     if (type === 'rhythmPage') {
 
